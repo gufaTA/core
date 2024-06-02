@@ -1,0 +1,50 @@
+{
+    "name": "gufata/core",
+    "description": "GufTA A Laravel package for retrieving and operating Core data.",
+    "keywords": [ "gufaTA", "core" ],
+    "homepage": "https://github.com/gufaTA/core",
+    "support": {
+        "email": "support@gufata.org",
+        "source": "https://github.com/gufaTA/core",
+        "issues": "https://github.com/gufaTA/core/issues",
+        "docs": "https://gufata.org/docs",
+        "forum": "https://gufata.org/forum",
+        "wiki": "https://gufata.org/wiki"
+    },
+    "authors": [
+        {
+            "name": "gufaTA Team",
+            "email": "dev@gufata.com",
+            "homepage": "https://gufata.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "proprietary",
+    "type": "library",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "Gufata\\Core\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gufata\\Core\\Tests\\": "tests/"
+        }
+    },
+    "require": {},
+    "require-dev": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gufata\\Core\\CoreServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "psalm": "vendor/bin/psalm"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
